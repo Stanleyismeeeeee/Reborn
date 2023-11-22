@@ -48,3 +48,5 @@ levels(fct_householdIncome)
 levels(ord_fct_householdIncome)
 
 "middle income" < "high income"
+
+saveRDS(flights, file="data/week7/flights.rds")
