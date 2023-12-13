@@ -21,3 +21,11 @@ flights$data[[2]][["data_frame"]] <- airlines
 
 flightsData <- flights$data[[1]]$data_frame
 
+
+dplyr::left_join(
+  flightsData, airlines,
+  by="AirlineID"
+) -> flightsData
+
+
+#Week8 14:24
